@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import { NavLink as Link } from "react-router-dom";
 import OutsideClickHandler from "react-outside-click-handler";
 
-import Hamburger from "./Hamburger";
+import { Hamburger, CloseButton } from "./NavButtons";
 
 import * as colors from "../../colors";
 import * as media from "../../mediaBounds";
@@ -28,9 +28,11 @@ export default function SideNavBar() {
           {/* TODO: Implement a hamburger icon that controls the open state of the sidebar. This control should only be visible on mobile devices via CSS media queries */}
           {/* The sidebar should slide in from left */}
           <SideNavHeader>
-            <SideNavCloseBtn onClick={toggleSideNav}>close</SideNavCloseBtn>
             Wesley
             <img src={Arrow} alt="Arrow pointing down" />
+            <SideNavCloseBtn onClick={toggleSideNav} isOpen={isOpen}>
+              <CloseButton />
+            </SideNavCloseBtn>
           </SideNavHeader>
           <SideNavMainLink to="/discover" exact>
             Discover
@@ -61,6 +63,7 @@ const destyledButton = styled.button`
 
 const SideNavHamBtn = styled(destyledButton)`
   position: absolute;
+
   padding: 16px 25px;
   @media (min-width: ${media.mobileBound}) {
     display: none;
@@ -71,7 +74,6 @@ const SideNavCloseBtn = styled(destyledButton)`
   @media (min-width: ${media.mobileBound}) {
     display: none;
   }
-  background-color: red;
 `;
 
 const SideNavBarCont = styled.div`

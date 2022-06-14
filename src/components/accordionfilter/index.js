@@ -1,8 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
 
-import * as colors from "../../colors";
-
 import ToggleButton from "./ToggleButton";
 
 export default function AccordionFilter({ options, title }) {

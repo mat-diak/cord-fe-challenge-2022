@@ -43,66 +43,6 @@ export default function MovieItem({ movie, genres }) {
   );
 }
 
-const Rating = styled.div`
-  background-color: ${colors.primaryColor};
-  color: ${colors.white};
-  padding: 0.1em 0.2em;
-  border-radius: 5px;
-`;
-
-const smallText = styled.div`
-  color: ${colors.primaryColor};
-  font-size: 0.7em;
-
-  @media (min-width: ${media.mobileBound}) {
-    font-size: 0.8em;
-  }
-`;
-
-const Date = styled(smallText)`
-  font-weight: 300;
-  vertical-align: baseline;
-`;
-
-const Genres = styled(smallText)`
-  margin: 0.3em 0 0.6em 0;
-  font-weight: 700;
-`;
-
-const Overview = styled.p`
-  font-size: 0.9em;
-
-  margin: 0;
-  padding-top: 0.4em;
-
-  overflow: hidden;
-
-  @media (min-width: ${media.mobileBound}) {
-    padding-top: 0;
-  }
-`;
-
-const PosterImage = styled.img`
-  height: 160px;
-
-  @media (min-width: ${media.mobileBound}) {
-    height: 250px;
-  }
-`;
-
-const Header = styled.div`
-  div {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-`;
-
-const Body = styled.div`
-  height: 100%;
-  overflow: hidden;
-`;
-
 const MovieItemWrapper = styled.article`
   position: relative;
   height: 160px;
@@ -119,9 +59,21 @@ const MovieItemWrapper = styled.article`
   }
 `;
 
+// LEFT CONTAINER
+
 const LeftCont = styled.div`
   display: inline-block;
 `;
+
+const PosterImage = styled.img`
+  height: 160px;
+
+  @media (min-width: ${media.mobileBound}) {
+    height: 250px;
+  }
+`;
+
+// RIGHT CONTAINER
 
 const RightCont = styled.div`
   display: flex;
@@ -130,23 +82,16 @@ const RightCont = styled.div`
   height: 100%;
 `;
 
-const GradienOverlay = styled.div`
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  margin: -20px 0 0 -20px;
-  background-color: white;
-  bonOutsideClick={() => setIsOpen(false)}order-radius: 0 0 5px 0;
-  z-index: 5;
+const Body = styled.div`
   height: 100%;
-  width: 100%;
-  background: linear-gradient(
-    150deg,
-    transparent 70%,
-    rgba(255, 255, 255, 1) 90%
-  );
-  @media (min-width: ${media.mobileBound}) {
-    display: none;
+  overflow: hidden;
+`;
+
+const Header = styled.div`
+  div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 `;
 
@@ -159,4 +104,63 @@ const Title = styled.h2`
   @media (min-width: ${media.mobileBound}) {
     font-size: 1.4em;
   }
+`;
+
+const smallText = styled.div`
+  color: ${colors.primaryColor};
+  font-size: 0.7em;
+
+  @media (min-width: ${media.mobileBound}) {
+    font-size: 0.8em;
+  }
+`;
+
+const Genres = styled(smallText)`
+  margin: 0.3em 0 0.6em 0;
+  font-weight: 700;
+`;
+
+const Date = styled(smallText)`
+  font-weight: 300;
+`;
+
+const Rating = styled.div`
+  background-color: ${colors.primaryColor};
+  color: ${colors.white};
+  padding: 0.1em 0.2em;
+  border-radius: 5px;
+`;
+
+const Overview = styled.p`
+  font-size: 0.9em;
+
+  margin: 0;
+  padding-top: 0.4em;
+
+  overflow: hidden;
+
+  @media (min-width: ${media.mobileBound}) {
+    padding-top: 0;
+  }
+`;
+
+const GradienOverlay = styled.div`
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  margin: -20px 0 0 -20px;
+  background-color: white;
+  border-radius: 0 0 5px 0;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    150deg,
+    transparent 70%,
+    rgba(255, 255, 255, 1) 90%
+  );
+
+  @media (min-width: ${media.mobileBound}) {
+    display: none;
+  } ;
 `;

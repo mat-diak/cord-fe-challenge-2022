@@ -13,6 +13,4 @@ export default function MovieList({ movies, genres }) {
   );
 }
 
-const MoviesWrapper = styled.div`
-  position: relative;
-`;
+const MoviesWrapper = styled.div``;

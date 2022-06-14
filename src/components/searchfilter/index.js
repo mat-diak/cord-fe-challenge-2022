@@ -39,6 +39,7 @@ export default function SearchFilters({
       </SearchFiltersCont>
       <SearchFiltersCont>
         <CategoryTitle>Movie</CategoryTitle>
+
         {/* TODO: Complete the "AccordionFilter" component and re-use it for all filter categories */}
         <ExpandableFilter options={genres} title="Select genre(s)" />
         <ExpandableFilter options={ratings} title="Select min. vote" />
@@ -77,12 +78,16 @@ const SearchFiltersCont = styled.div`
   display: flex;
   gap: 15px;
 
+  /* hides filters on mobile */
+  /* needs redone using isOpen */
   :nth-child(2) {
     @media (max-width: ${media.mobileBound}) {
       display: none;
     }
   }
 
+  /* hides year input */
+  /* should become part of filters on mobile */
   .search_bar_wrapper:nth-child(3) {
     @media (max-width: ${media.mobileBound}) {
       display: none;
@@ -95,10 +100,10 @@ const SearchFiltersCont = styled.div`
     margin-bottom: 15px;
   }
 
-  &:nth-child(2) year_search_input {
-    @media (max-width: ${media.mobileBound}) {
-      display: none;
-    }
+  @media (min-width: ${media.mobileBound}) {
+    flex-direction: column;
+    background-color: ${colors.white};
+    padding: 20px;
   }
 
   ${(props) =>
@@ -106,12 +111,6 @@ const SearchFiltersCont = styled.div`
     css`
       margin-bottom: 15px;
     `}
-
-  @media (min-width: ${media.mobileBound}) {
-    flex-direction: column;
-    background-color: ${colors.white};
-    padding: 20px;
-  }
 `;
 
 const CategoryTitle = styled.h3`

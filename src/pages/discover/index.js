@@ -49,7 +49,7 @@ export default class Discover extends React.Component {
   }
 
   // TODO: Update search results based on the keyword and year inputs
-  async componentDidUpdate(prevProps, prevState, snapshot) {
+  async componentDidUpdate(prevProps, prevState) {
     if (
       this.state.query !== prevState.query ||
       this.state.year !== prevState.year
@@ -57,6 +57,11 @@ export default class Discover extends React.Component {
       this.fetchNewDataDebounced(this.state.query, this.state.year);
     }
   }
+
+  fetchNewDataDebounced = debounce(
+    async (query, year) => await this.fetchNewData(query, year),
+    300
+  );
 
   fetchNewData = async (query, year) => {
     const moviesData = this.state.query
@@ -68,11 +73,6 @@ export default class Discover extends React.Component {
       totalCount: moviesData.total_results,
     });
   };
-
-  fetchNewDataDebounced = debounce(
-    async (query, year) => await this.fetchNewData(query, year),
-    300
-  );
 
   onSearch = (state) => {
     this.setState({ ...state });
