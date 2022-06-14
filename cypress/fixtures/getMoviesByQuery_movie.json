@@ -1,0 +1,400 @@
+{
+  "page": 1,
+  "results": [
+      {
+          "adult": false,
+          "backdrop_path": "/fy8bBNQyKtRnznm3G3QWdu2wIC8.jpg",
+          "genre_ids": [
+              16,
+              28,
+              35
+          ],
+          "id": 347201,
+          "original_language": "ja",
+          "original_title": "BORUTO -NARUTO THE MOVIE-",
+          "overview": "The spirited Boruto Uzumaki, son of Seventh Hokage Naruto, is a skilled ninja who possesses the same brashness and passion his father once had. However, the constant absence of his father, who is busy with his Hokage duties, puts a damper on Boruto's fire. He ends up meeting his father's friend Sasuke, and requests to become... his apprentice!? The curtain on the story of the new generation rises!",
+          "popularity": 197.025,
+          "poster_path": "/1k6iwC4KaPvTBt1JuaqXy3noZRY.jpg",
+          "release_date": "2015-08-07",
+          "title": "Boruto: Naruto the Movie",
+          "video": false,
+          "vote_average": 7.6,
+          "vote_count": 1042
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/m5dA4JZsj78EBTa2D6imWOAebwB.jpg",
+          "genre_ids": [
+              35
+          ],
+          "id": 4247,
+          "original_language": "en",
+          "original_title": "Scary Movie",
+          "overview": "A familiar-looking group of teenagers find themselves being stalked by a more-than-vaguely recognizable masked killer! As the victims begin to pile up and the laughs pile on, none of your favorite scary movies escape the razor-sharp satire of this outrageously funny parody!",
+          "popularity": 116.739,
+          "poster_path": "/lRQiJXETkCnVVurHmglNvMXrZOx.jpg",
+          "release_date": "2000-07-07",
+          "title": "Scary Movie",
+          "video": false,
+          "vote_average": 6.3,
+          "vote_count": 5547
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/l8ubUlfzlB5R2j9cJ3CN7tj0gmd.jpg",
+          "genre_ids": [
+              28,
+              10749,
+              16
+          ],
+          "id": 317442,
+          "original_language": "ja",
+          "original_title": "The Last: Naruto the Movie",
+          "overview": "Two years after the events of the Fourth Great Ninja War, the moon that Hagoromo Otsutsuki created long ago to seal away the Gedo Statue begins to descend towards the world, threatening to become a meteor that would destroy everything on impact. Amidst this crisis, a direct descendant of Kaguya Otsutsuki named Toneri Otsutsuki attempts to kidnap Hinata Hyuga but ends up abducting her younger sister Hanabi. Naruto and his allies now mount a rescue mission before finding themselves embroiled in a final battle to decide the fate of everything.",
+          "popularity": 198.906,
+          "poster_path": "/bAQ8O5Uw6FedtlCbJTutenzPVKd.jpg",
+          "release_date": "2014-12-06",
+          "title": "The Last: Naruto the Movie",
+          "video": false,
+          "vote_average": 7.8,
+          "vote_count": 1183
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/a17F3zXnmuwqxfiDa46mtlosjrv.jpg",
+          "genre_ids": [
+              16,
+              10751,
+              12,
+              35,
+              878
+          ],
+          "id": 675445,
+          "original_language": "en",
+          "original_title": "PAW Patrol: The Movie",
+          "overview": "Ryder and the pups are called to Adventure City to stop Mayor Humdinger from turning the bustling metropolis into a state of chaos.",
+          "popularity": 292.119,
+          "poster_path": "/ic0intvXZSfBlYPIvWXpU1ivUCO.jpg",
+          "release_date": "2021-08-09",
+          "title": "PAW Patrol: The Movie",
+          "video": false,
+          "vote_average": 7.5,
+          "vote_count": 951
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/hdXQxlD4mep7qtC5TsvhIt840OV.jpg",
+          "genre_ids": [
+              16,
+              28,
+              12,
+              878
+          ],
+          "id": 703771,
+          "original_language": "en",
+          "original_title": "Deathstroke: Knights & Dragons - The Movie",
+          "overview": "The assassin Deathstroke tries to save his family from the wrath of H.I.V.E. and the murderous Jackal.",
+          "popularity": 271.94,
+          "poster_path": "/vFIHbiy55smzi50RmF8LQjmpGcx.jpg",
+          "release_date": "2020-08-04",
+          "title": "Deathstroke: Knights & Dragons - The Movie",
+          "video": false,
+          "vote_average": 6.9,
+          "vote_count": 349
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/oIClM946YzrDDNdhV4E6f0Z9nbx.jpg",
+          "genre_ids": [
+              35
+          ],
+          "id": 87818,
+          "original_language": "en",
+          "original_title": "Movie 43",
+          "overview": "Fifteen directors and an all-star cast created this twisted comedy that follows three teens on the hunt for the world's most banned film.",
+          "popularity": 58.079,
+          "poster_path": "/jqEzrpKhc7KMuoHlcAVcYoK7T7O.jpg",
+          "release_date": "2013-01-01",
+          "title": "Movie 43",
+          "video": false,
+          "vote_average": 4.5,
+          "vote_count": 1918
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/cugmVwK0N4aAcLibelKN5jWDXSx.jpg",
+          "genre_ids": [
+              16,
+              28,
+              14,
+              12
+          ],
+          "id": 768744,
+          "original_language": "ja",
+          "original_title": "僕のヒーローアカデミア THE MOVIE ワールド ヒーローズ ミッション",
+          "overview": "A mysterious group called Humarize strongly believes in the Quirk Singularity Doomsday theory which states that when quirks get mixed further in with future generations, that power will bring forth the end of humanity. In order to save everyone, the Pro-Heroes around the world ask UA Academy heroes-in-training to assist them and form a world-classic selected hero team. It is up to the heroes to save the world and the future of heroes in what is the most dangerous crisis to take place yet in My Hero Academia.",
+          "popularity": 804.481,
+          "poster_path": "/4NUzcKtYPKkfTwKsLjwNt8nRIXV.jpg",
+          "release_date": "2021-08-06",
+          "title": "My Hero Academia: World Heroes' Mission",
+          "video": false,
+          "vote_average": 7.5,
+          "vote_count": 192
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/7JzyYQnIpHdoMR3PtTwM5xaLA20.jpg",
+          "genre_ids": [
+              10751,
+              16,
+              12,
+              35
+          ],
+          "id": 5559,
+          "original_language": "en",
+          "original_title": "Bee Movie",
+          "overview": "Barry B. Benson, a bee who has just graduated from college, is disillusioned at his lone career choice: making honey. On a special trip outside the hive, Barry's life is saved by Vanessa, a florist in New York City. As their relationship blossoms, he discovers humans actually eat honey, and subsequently decides to sue us.",
+          "popularity": 50.933,
+          "poster_path": "/2o3zJ9uzILXljXbSLrwoo5CxmaW.jpg",
+          "release_date": "2007-10-28",
+          "title": "Bee Movie",
+          "video": false,
+          "vote_average": 6,
+          "vote_count": 4061
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/tcvPFdANexMxEsIUZnzjxBJbgkb.jpg",
+          "genre_ids": [
+              35
+          ],
+          "id": 4248,
+          "original_language": "en",
+          "original_title": "Scary Movie 2",
+          "overview": "While the original parodied slasher flicks like Scream, Keenen Ivory Wayans's sequel to Scary Movie takes comedic aim at haunted house movies. A group of students visit a mansion called \"Hell House,\" and murderous high jinks ensue.",
+          "popularity": 81.289,
+          "poster_path": "/7Eb1JWK0Cb0rbfsYjwfc9g0PbQH.jpg",
+          "release_date": "2001-07-04",
+          "title": "Scary Movie 2",
+          "video": false,
+          "vote_average": 5.8,
+          "vote_count": 3740
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/8ln5VUVk7gnNGIb2VNgw8nICDVt.jpg",
+          "genre_ids": [
+              16,
+              35,
+              10751
+          ],
+          "id": 35,
+          "original_language": "en",
+          "original_title": "The Simpsons Movie",
+          "overview": "After Homer accidentally pollutes the town's water supply, Springfield is encased in a gigantic dome by the EPA and the Simpsons are declared fugitives.",
+          "popularity": 98.946,
+          "poster_path": "/gzb6P78zeFTnv9eoFYnaJ2YrZ5q.jpg",
+          "release_date": "2007-07-25",
+          "title": "The Simpsons Movie",
+          "video": false,
+          "vote_average": 7,
+          "vote_count": 6787
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/kttkW0qMv4quwRH5a59gQMFrpl2.jpg",
+          "genre_ids": [
+              35
+          ],
+          "id": 4258,
+          "original_language": "en",
+          "original_title": "Scary Movie 5",
+          "overview": "Home with their newly-formed family, happy parents Dan and Jody are haunted by sinister, paranormal activities. Determined to expel the insidious force, they install security cameras and discover their family is being stalked by an evil dead demon.",
+          "popularity": 72.684,
+          "poster_path": "/r2Jwo4Eoax0oOnsU5qcXv0ea0Q8.jpg",
+          "release_date": "2013-04-11",
+          "title": "Scary Movie 5",
+          "video": false,
+          "vote_average": 4.8,
+          "vote_count": 2326
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/4ml6eXieYnW6qv9qHwUUfDi0ntm.jpg",
+          "genre_ids": [
+              35
+          ],
+          "id": 4256,
+          "original_language": "en",
+          "original_title": "Scary Movie 3",
+          "overview": "In the third installment of the Scary Movie franchise, news anchorwoman Cindy Campbell has to investigate mysterious crop circles and killing video tapes, and help the President stop an alien invasion in the process.",
+          "popularity": 58.859,
+          "poster_path": "/gLTVGCtUfD80sMDkbxAiWNso7Ne.jpg",
+          "release_date": "2003-10-24",
+          "title": "Scary Movie 3",
+          "video": false,
+          "vote_average": 6,
+          "vote_count": 3311
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/pXLdhDTJmrmg0PMBvgpzl67cCST.jpg",
+          "genre_ids": [
+              16,
+              10751
+          ],
+          "id": 882206,
+          "original_language": "en",
+          "original_title": "L.O.L. Surprise: The Movie",
+          "overview": "Dazzling doll sisters Queen Bee and Royal Bee make their first movie with help from their fashionable friends in this one-of-a-kind magical adventure.",
+          "popularity": 104.094,
+          "poster_path": "/vbc8H3SR3BM6TZkJw6UBN4ekdjK.jpg",
+          "release_date": "2021-10-08",
+          "title": "L.O.L. Surprise: The Movie",
+          "video": false,
+          "vote_average": 7,
+          "vote_count": 106
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/6hStN2cnRgGM11IYKp6cRTFE78c.jpg",
+          "genre_ids": [
+              35
+          ],
+          "id": 4257,
+          "original_language": "en",
+          "original_title": "Scary Movie 4",
+          "overview": "Cindy finds out the house she lives in is haunted by a little boy and goes on a quest to find out who killed him and why. Also, Alien \"Tr-iPods\" are invading the world and she has to uncover the secret in order to stop them.",
+          "popularity": 54.807,
+          "poster_path": "/4SMqo8Me8aCT4KAVLeG9pk8VYiN.jpg",
+          "release_date": "2006-04-12",
+          "title": "Scary Movie 4",
+          "video": false,
+          "vote_average": 5.5,
+          "vote_count": 2630
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/53aUwtolUZxgzMr2KbDpOnD8jo3.jpg",
+          "genre_ids": [
+              16,
+              10751
+          ],
+          "id": 718867,
+          "original_language": "en",
+          "original_title": "The Larva Island Movie",
+          "overview": "Back at home, Chuck relates the island shenanigans of his larva pals Red and Yellow to a skeptical reporter in this movie sequel to the hit cartoon.",
+          "popularity": 62.229,
+          "poster_path": "/uHdxICUIRGoJjK67aOp3ykvL8ZW.jpg",
+          "release_date": "2020-07-23",
+          "title": "The Larva Island Movie",
+          "video": false,
+          "vote_average": 7.3,
+          "vote_count": 145
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/rvPE1YLumZA4gEhqgI5kIYdXowo.jpg",
+          "genre_ids": [
+              18,
+              10749
+          ],
+          "id": 810406,
+          "original_language": "th",
+          "original_title": "เพราะเราคู่กัน THE MOVIE",
+          "overview": "Tine, a college student, wants to get rid of a gay admirer and his friends recommend that he find a fake boyfriend: Sarawat. But Sarawat is hard to come by. Until he finally accepts. The two become close and intense emotions soon erupt. As Tine and Sarawat enter the second year of their relationship, they also begin to take on greater responsibilities in college with the former as the new president of the cheerleading club and the other as the new president of the music club.",
+          "popularity": 34.348,
+          "poster_path": "/gY9VuVtl9Eb2Twt29GBUMzT40oD.jpg",
+          "release_date": "2021-04-22",
+          "title": "2gether: The Movie",
+          "video": false,
+          "vote_average": 6.9,
+          "vote_count": 9
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/uLj6KxVPiu8tEDFcgFWu0V5stJn.jpg",
+          "genre_ids": [
+              10751,
+              16,
+              35,
+              12
+          ],
+          "id": 14444,
+          "original_language": "en",
+          "original_title": "The Rugrats Movie",
+          "overview": "Annoyed by the responsibility of being an older brother to Dil, Tommy sets out with Chuckie, Phil, and Lil to return his baby brother to the hospital. However, they inadvertently get lost in the woods during their trip.",
+          "popularity": 36.397,
+          "poster_path": "/uZejGKCSd6nwfMx8U0Td37U2fTc.jpg",
+          "release_date": "1998-11-20",
+          "title": "The Rugrats Movie",
+          "video": false,
+          "vote_average": 6.2,
+          "vote_count": 467
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/9guoVF7zayiiUq5ulKQpt375VIy.jpg",
+          "genre_ids": [
+              16,
+              28,
+              14,
+              12
+          ],
+          "id": 592350,
+          "original_language": "ja",
+          "original_title": "僕のヒーローアカデミア THE MOVIE ヒーローズ：ライジング",
+          "overview": "Class 1-A visits Nabu Island where they finally get to do some real hero work. The place is so peaceful that it's more like a vacation … until they're attacked by a villain with an unfathomable Quirk! His power is eerily familiar, and it looks like Shigaraki had a hand in the plan. But with All Might retired and citizens' lives on the line, there's no time for questions. Deku and his friends are the next generation of heroes, and they're the island's only hope.",
+          "popularity": 198.151,
+          "poster_path": "/zGVbrulkupqpbwgiNedkJPyQum4.jpg",
+          "release_date": "2019-12-20",
+          "title": "My Hero Academia: Heroes Rising",
+          "video": false,
+          "vote_average": 8.3,
+          "vote_count": 929
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/i2fZIltljrhFPsUK9PN6O6ZE7M4.jpg",
+          "genre_ids": [
+              10751,
+              16,
+              35,
+              14
+          ],
+          "id": 11836,
+          "original_language": "en",
+          "original_title": "The SpongeBob SquarePants Movie",
+          "overview": "There's trouble brewing in Bikini Bottom. Someone has stolen King Neptune's crown, and it looks like Mr. Krab, SpongeBob's boss, is the culprit. Though he's just been passed over for the promotion of his dreams, SpongeBob stands by his boss, and along with his best pal Patrick, sets out on a treacherous mission to Shell City to reclaim the crown and save Mr. Krab's life.",
+          "popularity": 78.647,
+          "poster_path": "/nLvLlyODv0StiSYDeCTE5KnN0Gi.jpg",
+          "release_date": "2004-11-14",
+          "title": "The SpongeBob SquarePants Movie",
+          "video": false,
+          "vote_average": 7,
+          "vote_count": 2306
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/9p3bwHTpX5Axpyp4gxqmDxWaau0.jpg",
+          "genre_ids": [
+              16,
+              35,
+              12
+          ],
+          "id": 410113,
+          "original_language": "en",
+          "original_title": "The Loud House Movie",
+          "overview": "The Loud family travel to Scotland and discover they are descendants of Scottish royalty as they move into their giant ancestral castle.",
+          "popularity": 82.718,
+          "poster_path": "/mab5wPeGVjbMyYMzyzfdKKnG9cl.jpg",
+          "release_date": "2021-08-20",
+          "title": "The Loud House Movie",
+          "video": false,
+          "vote_average": 7.7,
+          "vote_count": 120
+      }
+  ],
+  "total_pages": 194,
+  "total_results": 3880
+}

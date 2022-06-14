@@ -31,7 +31,7 @@ export default function MovieItem({ movie, genres }) {
           <Header>
             <div>
               <Title>{movie.title}</Title>
-              <Rating>{movie.vote_average}</Rating>
+              <Rating>{Number(movie.vote_average).toFixed(1)}</Rating>
             </div>
             <Genres>{mappedGenres.join(" | ")}</Genres>
           </Header>
@@ -80,6 +80,7 @@ const RightCont = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  width: 100%;
 `;
 
 const Body = styled.div`
@@ -127,7 +128,7 @@ const Date = styled(smallText)`
 const Rating = styled.div`
   background-color: ${colors.primaryColor};
   color: ${colors.white};
-  padding: 0.1em 0.2em;
+  padding: 0.18em 0.2em;
   border-radius: 5px;
 `;
 
@@ -140,7 +141,7 @@ const Overview = styled.p`
   overflow: hidden;
 
   @media (min-width: ${media.mobileBound}) {
-    padding-top: 0;
+    padding-top: 0.4em;
   }
 `;
 

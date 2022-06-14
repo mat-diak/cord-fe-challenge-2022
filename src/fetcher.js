@@ -33,6 +33,7 @@ export const getGenres = async () => {
 
   try {
     const res = await TMDB.get(endPoint + API_KEY + language);
+    console.log("getGenres", res.data);
     return res.data;
   } catch (error) {
     console.log(error);
@@ -46,8 +47,6 @@ export const getMoviesByQuery = async (query, year) => {
   const queryParam = "&query=" + query;
   const yearParam = "&year=" + year;
 
-  console.log("HIT");
-
   try {
     const res = await TMDB.get(
       endPoint + API_KEY + language + queryParam + yearParam
@@ -59,6 +58,6 @@ export const getMoviesByQuery = async (query, year) => {
 };
 
 export const getSmImgUrl = (poster_path) => {
-  const baseUrl = "https://image.tmdb.org/t/p/w200";
+  const baseUrl = "https://image.tmdb.org/t/p/w500";
   return baseUrl + poster_path;
 };

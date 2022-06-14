@@ -68,6 +68,10 @@ const SideNavHamBtn = styled(destyledButton)`
   @media (min-width: ${media.mobileBound}) {
     display: none;
   }
+
+  &:active {
+    background-color: ${colors.white_2};
+  }
 `;
 
 const SideNavCloseBtn = styled(destyledButton)`

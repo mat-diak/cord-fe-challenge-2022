@@ -19,7 +19,9 @@
     "eject": "react-scripts eject",
     "start-js": "react-scripts start",
     "start": "npm-run-all start-js",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "cypress:open": "npx cypress open",
+    "cypress:run": "npx cypress run"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,6 +39,8 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^7.32.0"
+    "cypress": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-cypress": "^2.12.1"
   }
 }

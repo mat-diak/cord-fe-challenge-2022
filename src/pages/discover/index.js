@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import debounce from "lodash.debounce";
 
-import * as colors from "../../colors";
 import * as fetcher from "../../fetcher";
 import * as media from "../../mediaBounds";
 
