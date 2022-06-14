@@ -1,3 +1,54 @@
+-- EDIT --
+
+To run locally:
+
+1. Get TMDB api key from [HERE](!https://developers.themoviedb.org/3/getting-started/introduction)
+2. Run
+
+```
+npm start
+
+```
+3. The app should open on localhost:3000
+
+### Tasks:
+#### General
+- [ ] get colour scheme to one place
+
+#### Design
+- [ ] Mobile-responsive 
+  - [ ] mockups
+- [ ] Desktop
+  - [ ] mockups + specific measurements
+- [ ] Accessibility
+
+#### Discover
+- [ ] Preload and set popular movies and movie genres when page loads
+- [ ] Update search results based on search query and year
+
+#### Fetcher
+- [ ] Link up with API
+- [ ] Set up axios instance
+
+#### Real-time search bar
+- [ ] debounce requests
+
+#### Filtercategories
+- [ ] create expandable/collapsable options
+
+#### SideNav
+- [ ] hamburger sideNav for mobile
+
+#### Additional
+- [ ] testing
+- [ ] README
+- [ ] Reporting
+- [ ] Error handling (ErrorCatcher, showing errors with Toastify)
+- [ ] 
+
+
+-- EDIT --
+
 # cord Coding Challenge (Front-end)
 
 ### Introduction 
