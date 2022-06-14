@@ -35,6 +35,15 @@ export default class Discover extends React.Component {
   }
 
   // TODO: Preload and set the popular movies and movie genres when page loads
+  async componentDidMount () {
+    const popularMoviesData = await fetcher.getPopularMovies();
+    const getGenres = await fetcher.getGenres();
+    const byQuery = await fetcher.getMoviesByQuery('Hello')
+
+    console.log('popularMoviesData', popularMoviesData)
+    console.log('getGenres', getGenres)
+    console.log('byQuery', byQuery)
+  }
 
   // TODO: Update search results based on the keyword and year inputs
 
