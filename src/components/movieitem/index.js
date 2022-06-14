@@ -1,6 +1,8 @@
 import React from "react";
 import styled from 'styled-components';
 
+import * as colors from '../../colors'
+
 export default function MovieItem ({ movie, genres }) {
   return (
     // TODO: Complete the MovieItem component
@@ -16,7 +18,7 @@ export default function MovieItem ({ movie, genres }) {
 
 const MovieItemWrapper = styled.div`
   position: relative;
-  background-color: white;
+  background-color: ${colors.white};
   border-radius: 5px;
   padding: 20px;
   margin: 15px 0;

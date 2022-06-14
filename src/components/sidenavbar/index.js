@@ -38,7 +38,7 @@ const SideNavBarCont = styled.div`
   width: 280px;
   height: 100%;
   background-color: ${colors.sideNavBar};
-  color: white;
+  color: ${colors.white};
 `
 
 const SectionsStyles = css`
@@ -49,7 +49,7 @@ const SectionsStyles = css`
   padding: 25px 35px;
   font-size: 1.6em;
   font-weight: 700;
-  color: white;
+  color: ${colors.white};
 `;
 
 const SideNavMainLink = styled(Link)`
@@ -81,7 +81,7 @@ const HeaderText = styled.div`
 
 const NavLink = styled(Link)`
   display: block;
-  color: white;
+  color: ${colors.white};
   opacity: .8;
   font-size: 1.2em;
   padding: 10px 35px;

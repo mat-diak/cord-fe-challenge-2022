@@ -38,7 +38,7 @@ const FiltersWrapper = styled.div`
 `
 
 const SearchFiltersCont = styled.div`
-  background-color: white;
+  background-color: ${colors.white};
   padding: 20px;
   border-radius: 5px;
   transition: all .3s ease-in-out;
