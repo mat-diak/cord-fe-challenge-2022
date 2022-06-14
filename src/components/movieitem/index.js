@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import * as colors from "../../colors";
+import * as media from "../../mediaBounds";
 import { getSmImgUrl } from "../../fetcher";
 
 import posterTemplate from "../../images/poster-template.jpeg";
@@ -14,6 +15,7 @@ export default function MovieItem({ movie, genres }) {
   return (
     // TODO: Complete the MovieItem component
     <MovieItemWrapper>
+      <GradienOverlay />
       <LeftCont>
         <PosterImage
           src={getSmImgUrl(movie.poster_path)}
@@ -27,17 +29,12 @@ export default function MovieItem({ movie, genres }) {
       <RightCont>
         <Header>
           <div>
-            {/* TITLE */}
             <Title>{movie.title}</Title>
-            {/* RATING */}
             <Rating>{movie.vote_average}</Rating>
           </div>
-          {/* GENRES */}
           <Genres>{mappedGenres.join(" | ")}</Genres>
         </Header>
-        {/* OVERVIEW */}
         <Overview>{movie.overview}</Overview>
-        {/* DATE */}
         <Date>{movie.release_date}</Date>
       </RightCont>
     </MovieItemWrapper>
@@ -52,8 +49,12 @@ const Rating = styled.div`
 `;
 
 const smallText = styled.div`
-  font-size: 14px;
   color: ${colors.primaryColor};
+  font-size: 0.7em;
+
+  @media (min-width: ${media.mobileBound}) {
+    font-size: 0.8em;
+  }
 `;
 
 const Date = styled(smallText)`
@@ -62,16 +63,25 @@ const Date = styled(smallText)`
 `;
 
 const Genres = styled(smallText)`
+  margin: 0.8em 0;
   font-weight: 700;
 `;
 
 const Overview = styled.p`
+  font-size: 0.9em;
+
   margin: 0;
   padding: 0;
+
+  overflow: hidden;
 `;
 
 const PosterImage = styled.img`
-  height: 250px;
+  height: 160px;
+
+  @media (min-width: ${media.mobileBound}) {
+    height: 250px;
+  }
 `;
 
 const Header = styled.div`
@@ -83,13 +93,13 @@ const Header = styled.div`
 `;
 
 const MovieItemWrapper = styled.article`
-  /* position: relative; */
+  position: relative;
+  height: 160px;
   display: flex;
 
   gap: 20px;
 
   background-color: ${colors.white};
-  border-radius: 5px;
   padding: 20px;
   margin: 15px 0;
 `;
@@ -102,10 +112,36 @@ const RightCont = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
+`;
+
+const GradienOverlay = styled.div`
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  margin: -20px 0 0 -20px;
+  background-color: white;
+  border-radius: 0 0 5px 0;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    150deg,
+    transparent 70%,
+    rgba(255, 255, 255, 1) 90%
+  );
+  @media (min-width: ${media.mobileBound}) {
+    display: none;
+  }
 `;
 
 const Title = styled.h2`
-  font-size: 1.4;
+  font-size: 1.2em;
+
   font-weight: 800;
-  margin: 0 1em 0.3em 0;
+  margin: 0 1em 0 0;
+
+  @media (min-width: ${media.mobileBound}) {
+    font-size: 1.4em;
+  }
 `;

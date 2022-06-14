@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import styled, { css } from "styled-components";
 import { NavLink as Link } from "react-router-dom";
+import OutsideClickHandler from "react-outside-click-handler";
+
+import Hamburger from "./Hamburger";
 
 import * as colors from "../../colors";
 import * as media from "../../mediaBounds";
@@ -12,42 +15,44 @@ export default function SideNavBar() {
   /* TODO: Write the necessary functions to open and close the sidebar */
 
   const toggleSideNav = (e) => {
-    e.preventDefault();
     setIsOpen(!isOpen);
   };
 
   return (
     <>
-      <SideNavHamBtn onClick={toggleSideNav}>Open</SideNavHamBtn>
-      <SideNavBarCont className={isOpen ? "visible" : ""}>
-        {/* TODO: Implement a hamburger icon that controls the open state of the sidebar. This control should only be visible on mobile devices via CSS media queries */}
-        {/* The sidebar should slide in from left */}
-        <SideNavHeader>
-          <SideNavCloseBtn onClick={toggleSideNav}>close</SideNavCloseBtn>
-          Wesley
-          <img src={Arrow} alt="Arrow pointing down" />
-        </SideNavHeader>
-        <SideNavMainLink to="/discover" exact>
-          Discover
-          <img src={SearchWhite} alt="Magnifying glass" />
-        </SideNavMainLink>
-        <SideNavSectionTitle>
-          <HeaderText>Watched</HeaderText>
-        </SideNavSectionTitle>
-        <NavLink to="/watched/movies">Movies</NavLink>
-        <NavLink to="/watched/tv-shows">Tv Shows</NavLink>
-        <SideNavSectionTitle>
-          <HeaderText>Saved</HeaderText>
-        </SideNavSectionTitle>
-        <NavLink to="/saved/movies">Movies</NavLink>
-        <NavLink to="/saved/tv-shows">Tv Shows</NavLink>
-      </SideNavBarCont>
+      <SideNavHamBtn onClick={toggleSideNav}>
+        <Hamburger />
+      </SideNavHamBtn>
+      <OutsideClickHandler onOutsideClick={() => setIsOpen(false)}>
+        <SideNavBarCont className={isOpen ? "visible" : ""}>
+          {/* TODO: Implement a hamburger icon that controls the open state of the sidebar. This control should only be visible on mobile devices via CSS media queries */}
+          {/* The sidebar should slide in from left */}
+          <SideNavHeader>
+            <SideNavCloseBtn onClick={toggleSideNav}>close</SideNavCloseBtn>
+            Wesley
+            <img src={Arrow} alt="Arrow pointing down" />
+          </SideNavHeader>
+          <SideNavMainLink to="/discover" exact>
+            Discover
+            <img src={SearchWhite} alt="Magnifying glass" />
+          </SideNavMainLink>
+          <SideNavSectionTitle>
+            <HeaderText>Watched</HeaderText>
+          </SideNavSectionTitle>
+          <NavLink to="/watched/movies">Movies</NavLink>
+          <NavLink to="/watched/tv-shows">Tv Shows</NavLink>
+          <SideNavSectionTitle>
+            <HeaderText>Saved</HeaderText>
+          </SideNavSectionTitle>
+          <NavLink to="/saved/movies">Movies</NavLink>
+          <NavLink to="/saved/tv-shows">Tv Shows</NavLink>
+        </SideNavBarCont>
+      </OutsideClickHandler>
     </>
   );
 }
 
 const destyledButton = styled.button`
-  position: absolute;
   background: transparent;
   border: none;
   padding: 0;
@@ -55,11 +60,11 @@ const destyledButton = styled.button`
 `;
 
 const SideNavHamBtn = styled(destyledButton)`
+  position: absolute;
+  padding: 16px 25px;
   @media (min-width: ${media.mobileBound}) {
     display: none;
   }
-
-  background-color: red;
 `;
 
 const SideNavCloseBtn = styled(destyledButton)`

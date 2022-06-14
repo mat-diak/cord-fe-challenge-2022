@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import * as colors from "../../colors";
 import * as fetcher from "../../fetcher";
+import * as media from "../../mediaBounds";
 
 import SearchFilters from "../../components/searchfilter";
 import MovieList from "../../components/movielist";
@@ -63,7 +64,6 @@ export default class Discover extends React.Component {
       <DiscoverWrapper>
         <MobilePageTitle>Discover</MobilePageTitle>{" "}
         {/* MobilePageTitle should become visible on mobile devices via CSS media queries*/}
-        <TotalCount>{totalCount} results</TotalCount>
         <MovieFilters>
           <SearchFilters
             genres={genreOptions}
@@ -72,6 +72,7 @@ export default class Discover extends React.Component {
             searchMovies={(keyword, year) => this.searchMovies(keyword, year)}
           />
         </MovieFilters>
+        <TotalCount>{totalCount} results</TotalCount>
         <MovieResults>
           <MovieList movies={results || []} genres={genreOptions || []} />
         </MovieResults>
@@ -81,24 +82,40 @@ export default class Discover extends React.Component {
 }
 
 const DiscoverWrapper = styled.main`
-  padding: 35px;
+  padding: 25px;
+  @media (min-width: ${media.mobileBound}) {
+    padding: 35px;
+  }
 `;
 
 const MovieResults = styled.div`
   display: inline-block;
-  width: calc(100% - 295px);
+  @media (min-width: ${media.mobileBound}) {
+    width: calc(100% - 295px);
+  }
 `;
 
 const MovieFilters = styled.div`
-  width: 280px;
-  float: right;
   margin-top: 15px;
+  @media (min-width: ${media.mobileBound}) {
+    width: 280px;
+    float: right;
+  }
 `;
 
 const MobilePageTitle = styled.h1`
-  display: none;
+  position: relative;
+  left: 60px;
+  top: -8px;
+  font-weight: 400;
+
+  @media (min-width: ${media.mobileBound}) {
+    display: none;
+  }
 `;
 
 const TotalCount = styled.strong`
   display: block;
+  font-weight: 300;
+  font-size: 14px;
 `;

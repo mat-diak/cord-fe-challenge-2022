@@ -1,1 +1,1 @@
-export const mobileBound = "850px";
+export const mobileBound = "1200px";
