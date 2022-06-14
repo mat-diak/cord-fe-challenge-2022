@@ -84,7 +84,7 @@ export default class Discover extends React.Component {
 const DiscoverWrapper = styled.main`
   padding: 25px;
   @media (min-width: ${media.mobileBound}) {
-    padding: 35px;
+    padding: 45px;
   }
 `;
 

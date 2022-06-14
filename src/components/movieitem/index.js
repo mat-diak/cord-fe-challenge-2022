@@ -27,14 +27,16 @@ export default function MovieItem({ movie, genres }) {
         />
       </LeftCont>
       <RightCont>
-        <Header>
-          <div>
-            <Title>{movie.title}</Title>
-            <Rating>{movie.vote_average}</Rating>
-          </div>
-          <Genres>{mappedGenres.join(" | ")}</Genres>
-        </Header>
-        <Overview>{movie.overview}</Overview>
+        <Body>
+          <Header>
+            <div>
+              <Title>{movie.title}</Title>
+              <Rating>{movie.vote_average}</Rating>
+            </div>
+            <Genres>{mappedGenres.join(" | ")}</Genres>
+          </Header>
+          <Overview>{movie.overview}</Overview>
+        </Body>
         <Date>{movie.release_date}</Date>
       </RightCont>
     </MovieItemWrapper>
@@ -92,6 +94,11 @@ const Header = styled.div`
   }
 `;
 
+const Body = styled.div`
+  height: 100%;
+  overflow: hidden;
+`;
+
 const MovieItemWrapper = styled.article`
   position: relative;
   height: 160px;
@@ -102,6 +109,10 @@ const MovieItemWrapper = styled.article`
   background-color: ${colors.white};
   padding: 20px;
   margin: 15px 0;
+
+  @media (min-width: ${media.mobileBound}) {
+    height: 250px;
+  }
 `;
 
 const LeftCont = styled.div`
@@ -121,7 +132,7 @@ const GradienOverlay = styled.div`
   bottom: 0px;
   margin: -20px 0 0 -20px;
   background-color: white;
-  border-radius: 0 0 5px 0;
+  bonOutsideClick={() => setIsOpen(false)}order-radius: 0 0 5px 0;
   z-index: 5;
   height: 100%;
   width: 100%;

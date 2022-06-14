@@ -65,6 +65,7 @@ const MobileFiltersButton = styled.button`
 
 const FiltersWrapper = styled.div`
   position: relative;
+  margin-top: 19px;
 `;
 
 const SearchFiltersCont = styled.div`
@@ -83,7 +84,6 @@ const SearchFiltersCont = styled.div`
     }
   }
 
-  border-radius: 5px;
   transition: all 0.3s ease-in-out;
 
   .search_bar_wrapper:first-child {
