@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import debounce from "lodash.debounce";
 
 import * as colors from "../../colors";
 import * as fetcher from "../../fetcher";
@@ -45,11 +46,24 @@ export default class Discover extends React.Component {
       totalCount: popularMoviesData.total_results,
       genreOptions: genresData.genres,
     });
-    console.log(this.state);
   }
 
   // TODO: Update search results based on the keyword and year inputs
+
   // const byQuery = await fetcher.getMoviesByQuery('Hello')
+  onSearchDebounced = debounce(
+    async (query) => await this.onSearch(query),
+    300
+  );
+
+  onSearch = async (query) => {
+    const moviesSearchData = await fetcher.getMoviesByQuery(query);
+    this.setState({
+      results: moviesSearchData.results,
+      totalCount: moviesSearchData.total_results,
+      keyword: query,
+    });
+  };
 
   render() {
     const {
@@ -69,6 +83,7 @@ export default class Discover extends React.Component {
             genres={genreOptions}
             ratings={ratingOptions}
             languages={languageOptions}
+            onSearch={this.onSearchDebounced}
             searchMovies={(keyword, year) => this.searchMovies(keyword, year)}
           />
         </MovieFilters>

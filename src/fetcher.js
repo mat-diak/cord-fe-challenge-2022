@@ -45,6 +45,7 @@ export const getMoviesByQuery = async (query) => {
   const API_KEY = "?api_key=" + process.env.REACT_APP_API_KEY;
   const queryParam = "&query=" + query;
 
+  console.log("HIT");
   // to implement
   // const yearParam = '&year=' + year
   try {

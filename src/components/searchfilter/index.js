@@ -24,6 +24,7 @@ export default function SearchFilters({
           type="text"
           icon={{ src: SearchIcon, alt: "Magnifying glass" }}
           placeholder="Search for movies"
+          onChange={onSearch}
         />
         <MobileFiltersButton>
           <img src={FiltersIcon} alt="Filters icon" />
@@ -36,7 +37,7 @@ export default function SearchFilters({
         />
       </SearchFiltersCont>
       <SearchFiltersCont>
-        <CategoryTitle>Movies</CategoryTitle>
+        <CategoryTitle>Movie</CategoryTitle>
         {/* TODO: Complete the "AccordionFilter" component and re-use it for all filter categories */}
         <ExpandableFilter options={genres} title="Select genre(s)" />
         <ExpandableFilter options={ratings} title="Select min. vote" />
