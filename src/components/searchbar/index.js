@@ -11,7 +11,10 @@ export default function SearchBar({ icon, id, type, placeholder, onChange }) {
       <input
         type={type}
         id={id}
-        onChange={(e) => onChange(e.target.value)}
+        onChange={(e) => {
+          const param = type === "number" ? "year" : "query";
+          onChange({ [param]: e.target.value });
+        }}
         placeholder={placeholder}
       />
     </InputWrapper>
@@ -33,6 +36,7 @@ const InputWrapper = styled.div`
     font-size: 1.2em;
     margin-left: 10px;
     font-weight: 900;
+    width: 100%;
 
     &::placeholder {
       opacity: 0.8;

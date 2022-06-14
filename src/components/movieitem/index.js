@@ -65,7 +65,7 @@ const Date = styled(smallText)`
 `;
 
 const Genres = styled(smallText)`
-  margin: 0.8em 0;
+  margin: 0.3em 0 0.6em 0;
   font-weight: 700;
 `;
 
@@ -73,9 +73,13 @@ const Overview = styled.p`
   font-size: 0.9em;
 
   margin: 0;
-  padding: 0;
+  padding-top: 0.4em;
 
   overflow: hidden;
+
+  @media (min-width: ${media.mobileBound}) {
+    padding-top: 0;
+  }
 `;
 
 const PosterImage = styled.img`

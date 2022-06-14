@@ -39,17 +39,19 @@ export const getGenres = async () => {
   }
 };
 
-export const getMoviesByQuery = async (query) => {
+export const getMoviesByQuery = async (query, year) => {
   const endPoint = "/search/movie";
   const language = "&language=en-US";
   const API_KEY = "?api_key=" + process.env.REACT_APP_API_KEY;
   const queryParam = "&query=" + query;
+  const yearParam = "&year=" + year;
 
   console.log("HIT");
-  // to implement
-  // const yearParam = '&year=' + year
+
   try {
-    const res = await TMDB.get(endPoint + API_KEY + language + queryParam);
+    const res = await TMDB.get(
+      endPoint + API_KEY + language + queryParam + yearParam
+    );
     return res.data;
   } catch (error) {
     console.log(error);

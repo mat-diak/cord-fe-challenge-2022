@@ -34,6 +34,7 @@ export default function SearchFilters({
           type="number"
           icon={{ src: YearIcon, alt: "Calendar icon" }}
           placeholder="Year of release"
+          onChange={onSearch}
         />
       </SearchFiltersCont>
       <SearchFiltersCont>

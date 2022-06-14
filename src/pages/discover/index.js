@@ -14,7 +14,7 @@ export default class Discover extends React.Component {
     super(props);
 
     this.state = {
-      keyword: "",
+      query: "",
       year: 0,
       results: [],
       totalCount: 0,
@@ -49,20 +49,33 @@ export default class Discover extends React.Component {
   }
 
   // TODO: Update search results based on the keyword and year inputs
+  async componentDidUpdate(prevProps, prevState, snapshot) {
+    if (
+      this.state.query !== prevState.query ||
+      this.state.year !== prevState.year
+    ) {
+      this.fetchNewDataDebounced(this.state.query, this.state.year);
+    }
+  }
 
-  // const byQuery = await fetcher.getMoviesByQuery('Hello')
-  onSearchDebounced = debounce(
-    async (query) => await this.onSearch(query),
+  fetchNewData = async (query, year) => {
+    const moviesData = this.state.query
+      ? await fetcher.getMoviesByQuery(query, year)
+      : await fetcher.getPopularMovies();
+
+    this.setState({
+      results: moviesData.results,
+      totalCount: moviesData.total_results,
+    });
+  };
+
+  fetchNewDataDebounced = debounce(
+    async (query, year) => await this.fetchNewData(query, year),
     300
   );
 
-  onSearch = async (query) => {
-    const moviesSearchData = await fetcher.getMoviesByQuery(query);
-    this.setState({
-      results: moviesSearchData.results,
-      totalCount: moviesSearchData.total_results,
-      keyword: query,
-    });
+  onSearch = (state) => {
+    this.setState({ ...state });
   };
 
   render() {
@@ -83,8 +96,7 @@ export default class Discover extends React.Component {
             genres={genreOptions}
             ratings={ratingOptions}
             languages={languageOptions}
-            onSearch={this.onSearchDebounced}
-            searchMovies={(keyword, year) => this.searchMovies(keyword, year)}
+            onSearch={this.onSearch}
           />
         </MovieFilters>
         <TotalCount>{totalCount} results</TotalCount>

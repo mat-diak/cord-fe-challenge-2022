@@ -37,7 +37,7 @@ export default function AccordionFilter({ options, title }) {
 }
 
 const Title = styled.h3`
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   margin-left: 0.5em;
 `;
