@@ -66,10 +66,13 @@ const LeftCont = styled.div`
 `;
 
 const PosterImage = styled.img`
+  object-fit: cover;
   height: 160px;
+  width: calc((160 * 2 / 3) px);
 
   @media (min-width: ${media.mobileBound}) {
     height: 250px;
+    width: calc((250 * 2 / 3) px);
   }
 `;
 
@@ -128,7 +131,7 @@ const Date = styled(smallText)`
 const Rating = styled.div`
   background-color: ${colors.primaryColor};
   color: ${colors.white};
-  padding: 0.18em 0.2em;
+  padding: 0.18em 0.25em;
   border-radius: 5px;
 `;
 

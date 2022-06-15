@@ -1,8 +1,13 @@
-App shows movie suggestions
+## Features:
 
-To run locally:
+The app uses [TheMovieDBAPI](https://developers.themoviedb.org/3) to:
 
-1. Get TMDB api key from [HERE](!https://developers.themoviedb.org/3/getting-started/introduction)
+- suggest movies
+- title/year based movie search
+
+### To run locally:
+
+1. Get TMDB api key from [HERE](https://developers.themoviedb.org/3/getting-started/introduction)
 2. Change .env.template into .env, replace REACT_APP_API_KEY
 3. Run
 
@@ -18,6 +23,16 @@ To run the tests (have the server running locally) and run:
 ```
 npm run cypress:open
 ```
+
+### Demo:
+
+## Desktop
+
+<img src="https://i.imgur.com/o94rr11.png" alt="drawing" width="700"/>
+
+## Mobile
+
+<img src="https://i.imgur.com/Gg1PlBe.png" alt="drawing" width="350"/>
 
 ### Tasks:
 
@@ -67,7 +82,7 @@ npm run cypress:open
 
 #### Additional
 
-- [ ] testing
-- [ ] README
+- [ ]? testing
+- [x] README
 - [ ] Reporting
-- [ ] Error handling (ErrorHangler component, showing errors with Toastify)
+- [ ] Error handling (ErrorHandler component, error toasts)
